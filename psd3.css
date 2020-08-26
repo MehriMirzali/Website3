@@ -1,0 +1,225 @@
+.ColorRow{
+    height: 10px;
+    background-color: var(--Green);
+}
+header{
+    background-repeat: no-repeat;
+    background-image: url(img/back.jpg);
+    background-size: 100% 100%;
+    padding-bottom: 175px;
+}
+:root{
+    --Green:#2ecc71;
+    --HN:'Raleway', sans-serif;
+}
+.contanier{
+    max-width: 1180px;
+    margin: auto;
+}
+header .contanier{
+    padding-top: 170px;
+    padding-left: 115px;
+    
+}
+header p{
+    font: 500 24px/36px var(--HN);
+    max-width: 469px;
+    color: #fff;
+}
+.social a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-top: 25px;
+    margin-right: 15px ;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    opacity: 0.5;
+}
+.social i{
+    color: #fff;
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.social a:hover{
+    opacity: 1;
+    background-color: var(--Green);
+}
+.iki{
+    text-align: center;
+}
+#iki .contanier{
+    display: flex;
+    padding-top: 60px;
+}
+.iki h1{
+    font: 600 22px/18px var(--HN);
+    color: #222222;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.iki p{
+    font: normal 16px/26px var(--HN);
+    height: 130px;
+    color: #848484;
+    text-align: center;
+    padding-bottom: 60px;
+    text-align: center;
+    margin: auto;
+}
+.iki div{
+    margin: auto;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--Green);
+}
+.iki i{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: #FFF;
+    font-size: 40px;
+}
+#uc{
+    background-color: #e3e3e3
+}
+.uc img{
+    border-radius: 8px;
+}
+#uc .contanier{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.uc{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+#sol h1{
+    font: 600 22px/18px var(--HN);
+    color: #222222;
+}
+#sol p{
+    font: normal 16px/26px var(--HN);
+    max-width: 541px;
+    color: #848484;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+input,button{
+    height: 54px;
+    outline: none;
+    border-right: none;
+}
+
+input::placeholder{
+   color:#939393;
+}
+input{
+    font: normal 20px/18px var(--HN);
+    width: 280px;
+    border: 1px solid #c8c8c8;
+    border-radius: 15px 0 0 15px;
+    color: #848484;
+    text-indent: 25px;
+}
+button{
+    font: 700 20px/18px var(--HN);
+    margin-left: -5px;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--Green);
+    color: #fff;
+    width: 140px;
+    cursor: pointer;  
+}
+#dord .contanier{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+#p1{
+    font: italic normal 18px/30px var(--HN);
+    max-width: 887px;
+    color: #848484;
+    text-align: center;
+    margin: auto;
+}
+#p2{
+    font: normal 16px/26px var(--HN);
+    margin-top: 22px;
+    margin-bottom: 25px;
+    color: #848484;
+}
+
+#dord h1{
+    font: 700 18px/20px var(--HN);
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: #2e2e2e;
+    text-align: center;
+}
+#dord h2{
+    font: 600 24px/24px var(--HN);
+    margin-top: 20px;
+    color: #000;
+    text-align: center;
+}
+#ish a{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 10px;
+}
+#ish i{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: #FFF; 
+}
+#ish a:hover{
+    background-color: var(--Green);
+}
+.photos :hover{
+    cursor: pointer;
+}
+#son{
+    background-color: #e3e3e3;
+    text-align: center;
+    padding: 60px 0;
+}
+#son a{
+    margin-left: 40px;
+    font: normal 16px/26px var(--HN);
+    color: #848484;
+}
+@media only screen and (max-width:768px){
+    #iki .contanier{
+        flex-direction: column;
+    }
+    .iki p{
+        width: 400px;
+    }
+}
+@media only screen and (max-width:768px){
+    .uc{
+        display: flex;
+        flex-direction: column;
+    }
+    #sol p, h1 {
+        text-align: center;
+    }
+    .uc img{
+        margin-top: 50px;
+    }
+}
